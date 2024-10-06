@@ -7,6 +7,7 @@ import LandingPage from './LandingPage';
 import Login from './Login';
 import MyEvents from './MyEvents';
 import Register from './Register';
+import AdminEvents from './AdminEvents';
 import ResetPassword from './ResetPassword'; // Import your ResetPassword component
 import EditEvent from './EditEvent'; // Import the EditEvent component
 
@@ -42,6 +43,8 @@ function App() {
                     <Route path="/events" element={<Events />} />
                     <Route path="/my-events" element={<MyEvents />} />
                     <Route path="/edit-event/:id" element={<EditEvent />} /> {/* Add this line */}
+                    <Route path="/admin/events" element={<AdminEvents />} />
+
                 </>
             )}
         </Routes>
